@@ -1,0 +1,9 @@
+#
+
+## `Requirements for this project.`
+
+- Create a root/master account
+- Create a sub-account.
+- Create a new Organizational Unit (OU) called `Dev` and add the sub-account `DevOps`
+
+![Organizational Unit/sub-account](/images/1.png)
