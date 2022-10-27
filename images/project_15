@@ -7,3 +7,21 @@
 - Create a new Organizational Unit (OU) called `Dev` and add the sub-account `DevOps`
 
 ![Organizational Unit/sub-account](/images/1.png)
+
+## `Set Up a Virtual Private Network (VPC)`
+
+Create a VPC
+
+![vpc](/images/2.png)
+
+Create subnets as shown in the architecture
+
+- oayanda-Pub-Sub-1 - 10.0.1.0/24
+- oayanda-Pub-Sub-2 - 10.0.3.0/24
+- oayanda-Pri-Sub-1 - 10.0.2.0/24
+- oayanda-Pri-Sub-2 - 10.0.4.0/24
+- oayanda-Pri-Sub-3 - 10.0.5.0/24
+- oayanda-Pri-Sub-4 - 10.0.6.0/24
+
+
+
