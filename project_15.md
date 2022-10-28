@@ -79,3 +79,22 @@ Create a Security Group for the following
 - `Application Load Balancer`: ALB will be available from the Internet
 - `Webservers`: Access to Webservers should only be allowed from the `Nginx` servers. Since we do not have the servers created yet, just put some dummy records as a place holder, we will update it later.
 - `Data Layer`: Access to the Data layer, which is comprised of `Amazon Relational Database Service (RDS)` and `Amazon Elastic File System (EFS)` must be carefully desinged – only `webservers` should be able to connect to `RDS`, while `Nginx` and `Webservers` will have access to `EFS` Mountpoint.
+![vpc](/images/15.png)
+
+Configure Compute Resources
+
+We will need to set up and configure compute resources inside the VPC. The recources related to compute are the following
+
+- EC2 Instances
+- Launch Templates
+- Target Groups
+- Autoscaling Groups
+- TLS Certificates
+- Application Load Balancers (ALB)
+
+Create a Hosted Zone with Aws Route 
+![vpc](/images/16.png)
+
+`AWS Certificate Manager` > `Certificates` > `Request certificate`
+
+![vpc](/images/17.png)
