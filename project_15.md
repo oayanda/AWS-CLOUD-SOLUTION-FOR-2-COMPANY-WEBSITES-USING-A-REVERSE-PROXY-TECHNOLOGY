@@ -226,6 +226,10 @@ You need to ensure that the main domain for the WordPress website can be reached
 - Create an alias record for tooling.tooling.oayanda.com and wordpress.oayanda.com and direct its traffic to the ALB DNS name.
 ![vpc](/images/rout53.png)
 
+`AWS Certificate Manager` > `Certificates` > `Request certificate`
+
+![vpc](/images/17.png)
+
 ### `Setup Lunch Template`
 Prepare Launch Template For Webservers (wordpress and tooling), ngins, bastion (One per subnet)
 - Make use of the right AMI is set up a launch template.
@@ -253,3 +257,13 @@ For Wordpress and Tooling templates, make sure the mount access points are inclu
 - Set scale out if CPU utilization reaches 90%
 - Ensure there is an SNS topic to send scaling notifications.
 ![vpc](/images/autoscaling%20group.png)
+
+Ensure Health Check for target Groups are healthy
+![vpc](/images/tooling-target.png)
+
+Check applications in the broswer
+`Tooling application` - at tooling.oayanda.com
+![vpc](/images/tooling.png)
+
+`Wordpress application` at wordpress.oayanda.com
+![vpc](/images/wordpress.png)
